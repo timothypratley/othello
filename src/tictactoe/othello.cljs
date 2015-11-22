@@ -85,21 +85,13 @@
        (empty? (game/available-moves game player))))
 
 (deftest draw-test
-  (is (draw? {:type :othello
-              :computer "W"
-              :player "B"
-              :status :in-progress
-              :board-size 2
-              :board [["B" "W"]
-                      ["W" "B"]]}))
-  (is (not (draw? {:type :othello
-                   :computer "W"
-                   :player "B"
-                   :status :in-progress
-                   :board-size 3
-                   :board [["B" "W" " "]
-                           ["W" "B" " "]
-                           [" " " " " "]]}))))
+  (is (draw? (assoc (new-game 2)
+                    :board [["B" "W"]
+                            ["W" "B"]])))
+  (is (not (draw? (assoc (new-game 3)
+                         :board [["B" "W" " "]
+                                 ["W" "B" " "]
+                                 [" " " " " "]])))))
 
 (defmethod win? :othello
   [{:keys [board] :as game} player]
