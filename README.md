@@ -4,7 +4,9 @@ Win at all costs!
 
 ## Overview
 
-Click on the grey squares to move
+This project demonstrates extending a basic Tic Tac Toe game.
+We created the rules for Othello.
+Why not create your own board game?
 
 ## Setup
 
