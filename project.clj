@@ -39,7 +39,7 @@
                         :source-map-timestamp true}}
             {:id "min"
              :source-paths ["src"]
-             :compiler {:output-to "js/compiled/tictactoe.js"
+             :compiler {:output-to "js/compiled/othello.js"
                         :main tictactoe.core
                         :optimizations :advanced
                         :pretty-print false}}]}
