@@ -1,8 +1,8 @@
-(ns ^:figwheel-always tictactoe.core
-  (:require [tictactoe.game]
-            [tictactoe.tictactoe :as tictactoe]
-            [tictactoe.othello :as othello]
-            [tictactoe.view :as view]
+(ns ^:figwheel-always othello.core
+  (:require [othello.game]
+            [othello.tictactoe :as tictactoe]
+            [othello.othello :as othello]
+            [othello.view :as view]
             [clojure.string :as string]
             [reagent.core :as reagent :refer [atom]]
             [cljs.test :refer-macros [is testing]]))

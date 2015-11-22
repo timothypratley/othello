@@ -1,6 +1,6 @@
-(defproject tictactoe "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
+(defproject othello "0.1.0-SNAPSHOT"
+  :description "An Othello game clone"
+  :url "http://timothypratley.github.io/othello"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
@@ -23,24 +23,24 @@
   {:builds [{:id "devcards"
              :source-paths ["src" "test"]
              :figwheel {:devcards true
-                        :on-jsload "tictactoe.run/run"}
-             :compiler {:main tictactoe.core
+                        :on-jsload "othello.run/run"}
+             :compiler {:main othello.core
                         :asset-path "js/devcards"
                         :output-to "resources/public/js/compiled/devcards.js"
                         :output-dir "resources/public/js/devcards"
                         :source-map-timestamp true}}
             {:id "dev"
              :source-paths ["src"]
-             :figwheel {:on-jsload "tictactoe.core/on-js-reload"}
-             :compiler {:main tictactoe.core
+             :figwheel {:on-jsload "othello.core/on-js-reload"}
+             :compiler {:main othello.core
                         :asset-path "js/compiled/out"
-                        :output-to "resources/public/js/compiled/tictactoe.js"
+                        :output-to "resources/public/js/compiled/othello.js"
                         :output-dir "resources/public/js/compiled/out"
                         :source-map-timestamp true}}
             {:id "min"
              :source-paths ["src"]
              :compiler {:output-to "js/compiled/othello.js"
-                        :main tictactoe.core
+                        :main othello.core
                         :optimizations :advanced
                         :pretty-print false}}]}
 

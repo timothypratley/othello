@@ -1,4 +1,4 @@
-(ns tictactoe.game)
+(ns othello.game)
 
 (defmulti can-move? (fn [game i j player] (:type game)))
 (defmulti win? (fn [game player] (:type game)))

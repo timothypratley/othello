@@ -1,6 +1,6 @@
-(ns tictactoe.othello
+(ns othello.othello
   (:require
-   [tictactoe.game :as game :refer [draw? can-move? available? win?]]
+   [othello.game :as game :refer [draw? can-move? available? win?]]
    [cljs.test :refer-macros [is]]
    [devcards.core :refer-macros [deftest]]))
 

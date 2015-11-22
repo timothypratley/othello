@@ -1,10 +1,10 @@
-(ns tictactoe.run
+(ns othello.run
   (:require [cljs.test :refer-macros [run-all-tests]]
-            [tictactoe.core]
-            [tictactoe.game]
-            [tictactoe.othello]
-            [tictactoe.tictactoe]
-            [tictactoe.view]))
+            [othello.core]
+            [othello.game]
+            [othello.othello]
+            [othello.tictactoe]
+            [othello.view]))
 
 (defmethod cljs.test/report [:cljs.test/default :end-run-tests] [m]
   (if (cljs.test/successful? m)

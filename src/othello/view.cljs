@@ -1,7 +1,7 @@
-(ns tictactoe.view
-  (:require [tictactoe.tictactoe :as tictactoe]
-            [tictactoe.othello :as othello]
-            [tictactoe.game :as game]
+(ns othello.view
+  (:require [othello.tictactoe :as tictactoe]
+            [othello.othello :as othello]
+            [othello.game :as game]
             [reagent.core :as reagent]
             [devcards.core :refer-macros [defcard-rg deftest]]))
 
