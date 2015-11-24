@@ -1,4 +1,4 @@
-# tictactoe
+# Othello
 
 Win at all costs!
 
