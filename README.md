@@ -1,6 +1,6 @@
-# tictactoe
+# Othello
 
-Win at all costs!
+http://timothypratley.github.io/othello/
 
 ## Overview
 
