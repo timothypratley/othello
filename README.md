@@ -1,6 +1,7 @@
 # Othello
 
 http://timothypratley.github.io/othello/
+https://youtu.be/7fYmxt29Id4
 
 ## Overview
 
